@@ -1,9 +1,9 @@
-// proper way to import images - automatically generate path even after compilation and bundling
-import reactImg from './assets/react-core-concepts.png'
+
 
 import { CORE_CONCEPTS } from './data'
 import Header from './components/Header/Header'
 import CoreConcept from './components/CoreConcept';
+import TabButton from './components/TabButton'
 
 function App() {
   return (
@@ -22,6 +22,13 @@ function App() {
               <CoreConcept {...CORE_CONCEPTS[2]} />
               <CoreConcept {...CORE_CONCEPTS[3]} />
           </ul>
+        </section>
+        <section id='examples'>
+          <h2>Examples</h2>
+          <menu>
+            {/* children prop refers to the content between custom component tags */}
+            <TabButton>Components</TabButton>
+          </menu>
         </section>
       </main>
     </div>
