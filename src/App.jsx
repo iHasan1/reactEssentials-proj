@@ -28,6 +28,9 @@ function App() {
           <menu>
             {/* children prop refers to the content between custom component tags */}
             <TabButton>Components</TabButton>
+            <TabButton>JSX</TabButton>
+            <TabButton>Props</TabButton>
+            <TabButton>State</TabButton>
           </menu>
         </section>
       </main>
